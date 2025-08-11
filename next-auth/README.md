@@ -173,30 +173,6 @@ npm run build
 # Deploy to Vercel
 ```
 
-### Other Platforms
-- Netlify
-- Railway
-- DigitalOcean App Platform
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
 ## 📄 License
 
 This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- [Radix UI](https://www.radix-ui.com/) for accessible components
-- [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
-- [Next.js](https://nextjs.org/) for the React framework
-- [Lucide](https://lucide.dev/) for beautiful icons
-
----
-
-Built with ❤️ using modern web technologies
