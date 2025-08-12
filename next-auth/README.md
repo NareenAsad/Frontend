@@ -4,25 +4,28 @@ A beautiful Next.js application with modern authentication and component archite
 
 ## 🚀 Features
 
-- **Modern Authentication System** - Complete login/signup functionality with client-side state management
-- **Beautiful UI Components** - Built with Radix UI and Tailwind CSS
+- **Modern Authentication System** - Complete login/signup functionality with separate form components
+- **Beautiful UI Components** - Comprehensive Radix UI component library (50+ components)
 - **Responsive Design** - Mobile-first approach with adaptive layouts
 - **TypeScript** - Full type safety throughout the application
 - **Modern Stack** - Next.js 14 (App Router), React 18, Tailwind CSS 3
-- **Component Library** - Comprehensive UI component system
+- **Advanced Form Handling** - React Hook Form with Zod validation
 - **Protected Routes** - Route protection with authentication context
 - **Local Storage Persistence** - User session persistence across browser sessions
+- **Enhanced UI Library** - Charts, calendars, data tables, and more interactive components
 
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS 3
-- **UI Components**: Radix UI
+- **UI Components**: Radix UI (50+ components)
 - **Icons**: Lucide React
 - **State Management**: React Context API
-- **Form Handling**: Controlled components with React state
+- **Form Handling**: React Hook Form with Zod validation
+- **Charts**: Recharts for data visualization
 - **Animations**: CSS transitions and Tailwind animations
+- **Theming**: Next-themes for dark/light mode support
 
 ## 📦 Installation
 
@@ -57,7 +60,9 @@ next-auth/
 │   └── page.tsx           # Home page with conditional rendering
 ├── components/            # Reusable components
 │   ├── forms/            # Form components
-│   │   └── AuthForm.tsx  # Main authentication form
+│   │   ├── AuthForm.tsx  # Form wrapper component
+│   │   ├── SignInForm.tsx # Login form component
+│   │   └── SignUpForm.tsx # Registration form component
 │   ├── layout/           # Layout components
 │   │   ├── Navigation.tsx # Main navigation
 │   │   └── ProtectedRoute.tsx # Route protection wrapper
@@ -66,15 +71,33 @@ next-auth/
 │   ├── typography/       # Text components
 │   │   ├── Heading.tsx   # Heading components
 │   │   └── Text.tsx      # Text components
+│   ├── providers/        # Context providers
+│   │   └── theme-provider.tsx # Theme provider
 │   └── ui/               # UI components (Radix-based)
+│       ├── accordion.tsx # Accordion component
+│       ├── alert.tsx     # Alert component
+│       ├── avatar.tsx    # Avatar component
+│       ├── badge.tsx     # Badge component
 │       ├── button.tsx    # Button component
+│       ├── calendar.tsx  # Calendar component
 │       ├── card.tsx      # Card component
+│       ├── carousel.tsx  # Carousel component
+│       ├── chart.tsx     # Chart component
+│       ├── dialog.tsx    # Dialog component
+│       ├── dropdown-menu.tsx # Dropdown menu
+│       ├── form.tsx      # Form components
 │       ├── input.tsx     # Input component
-│       └── label.tsx     # Label component
+│       ├── label.tsx     # Label component
+│       ├── navigation-menu.tsx # Navigation menu
+│       ├── table.tsx     # Data table component
+│       ├── tabs.tsx      # Tabs component
+│       ├── toast.tsx     # Toast notifications
+│       └── ... (40+ more components)
 ├── lib/                  # Utility functions
 │   ├── auth-context.tsx  # Authentication context provider
 │   └── utils.ts          # Helper functions
 ├── hooks/                # Custom React hooks
+│   └── use-toast.ts      # Toast hook
 ├── public/               # Static assets
 └── tailwind.config.ts    # Tailwind configuration
 ```
@@ -83,29 +106,41 @@ next-auth/
 
 The project includes a comprehensive set of UI components built with Radix UI:
 
+### Core Components
 - **Forms**: Input, Label, Button with password visibility toggle
 - **Layout**: Card, CardHeader, CardContent, CardDescription
 - **Typography**: Heading, Text components with variants
 - **Navigation**: Navigation component with authentication state
-- **Feedback**: Loading states with spinners
-- **Interactive**: Button with loading states and animations
+
+### Advanced Components
+- **Data Display**: Table, Badge, Avatar, Progress
+- **Interactive**: Accordion, Collapsible, Tabs, Carousel
+- **Feedback**: Toast, Alert, Dialog, Tooltip
+- **Input**: Select, Checkbox, Radio Group, Switch, Slider
+- **Navigation**: Breadcrumb, Pagination, Menu Bar
+- **Overlay**: Popover, Hover Card, Context Menu
+- **Data Visualization**: Charts, Calendar
+- **Layout**: Sheet, Drawer, Resizable Panels
 
 ## 🔐 Authentication System
 
 The authentication system includes:
 
-- **AuthForm Component** - Unified login/signup form with mode switching
+- **Separate Form Components** - Dedicated SignIn and SignUp forms with individual state management
+- **AuthForm Wrapper** - Component that switches between login and signup modes
 - **AuthContext** - Global authentication state management with localStorage persistence
 - **ProtectedRoute** - Route protection wrapper for authenticated content
 - **Navigation** - Dynamic navigation based on authentication state
 - **Local Storage** - User session persistence across browser sessions
 
 ### Key Features:
-- **Mode Switching** - Toggle between login and signup modes
-- **Password Visibility** - Show/hide password functionality
+- **Dedicated Forms** - Separate components for login and signup with specific validation
+- **Password Visibility** - Show/hide password functionality for both forms
 - **Loading States** - Visual feedback during authentication
 - **Form Validation** - Client-side validation with required fields
+- **Password Confirmation** - Signup form includes password confirmation
 - **Responsive Design** - Mobile-friendly authentication forms
+- **Smooth Transitions** - CSS transitions for form switching
 
 ## 🎯 Available Scripts
 
@@ -154,6 +189,14 @@ The application is built with a mobile-first approach and includes:
 2. Use the existing UI components as building blocks
 3. Follow the established patterns for styling and structure
 4. Add TypeScript types for props
+
+### Form Development
+
+The project uses React Hook Form with Zod validation:
+- **SignInForm** - Handles user login with email/password
+- **SignUpForm** - Handles user registration with name, email, password, and confirmation
+- **Validation** - Client-side validation with proper error handling
+- **State Management** - Local state for form data and UI states
 
 ### Styling Guidelines
 
