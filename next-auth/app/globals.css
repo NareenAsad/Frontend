@@ -18,7 +18,7 @@
 
 @layer base {
   :root {
-    /* Light mode colors */
+    /*Light mode colors
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -34,18 +34,11 @@
     --accent: 0 0% 96.1%;
     --accent-foreground: 0 0% 9%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 315 100% 70%;
-    --chart-1: 315 100% 70%;
-    --chart-2: 280 100% 70%;
-    --chart-3: 330 100% 75%;
-    --chart-4: 290 80% 65%;
     --chart-5: 320 90% 68%;
-    --radius: 0.5rem;
+    --radius: 0.5rem;*/
     
-    /* Original color scheme - commented out
+    /* Original color scheme - commented out*/
+
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -71,7 +64,7 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-    */
+    
     
     /* Blue/purple color scheme - commented out
     --background: 222 84% 4.9%;
@@ -101,7 +94,7 @@
     */
   }
   .dark {
-    /* Original dark scheme - commented out
+    /* Original dark scheme - commented out*/
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
@@ -111,6 +104,14 @@
     --primary: 0 0% 98%;
     --primary-foreground: 0 0% 9%;
     --secondary: 0 0% 14.9%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 315 100% 70%;
+    --chart-1: 315 100% 70%;
+    --chart-2: 280 100% 70%;
+    --chart-3: 330 100% 75%;
+    --chart-4: 290 80% 65%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
@@ -126,7 +127,6 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    */
     
     /* Dark blue/purple scheme - commented out
     --background: 224 71% 4%;
@@ -155,7 +155,7 @@
     --chart-5: 340 75% 55%;
     */
     
-    /* New purple and pink dark scheme */
+    /* New purple and pink dark scheme 
     --background: 260 20% 6%;
     --foreground: 300 25% 92%;
     --card: 260 20% 6%;
@@ -179,7 +179,7 @@
     --chart-2: 280 100% 70%;
     --chart-3: 330 100% 75%;
     --chart-4: 290 80% 65%;
-    --chart-5: 320 90% 68%;
+    --chart-5: 320 90% 68%;*/
   }
 }
 
