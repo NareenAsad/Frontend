@@ -13,7 +13,7 @@ export default function AuthPage() {
 
   useEffect(() => {
     if (user && !isLoading) {
-      router.push('/');
+      router.push('/counter');
     }
   }, [user, isLoading, router]);
 
